@@ -1,18 +1,18 @@
 package com.vivi.bugTracking.model;
 
 public class Employee {
-
     private String loginId;
     private String firstName;
-    private String lastNam;
-    private String passworod;
+    private String lastName;
+    private String password;
+    private Role role;
 
     public Employee() {
     }
 
-    public Employee(String loginId, String passworod) {
+    public Employee(String loginId, String password) {
         this.loginId = loginId;
-        this.passworod = passworod;
+        this.password = password;
     }
 
     public String getLoginId() {
@@ -31,19 +31,27 @@ public class Employee {
         this.firstName = firstName;
     }
 
-    public String getLastNam() {
-        return lastNam;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastNam(String lastNam) {
-        this.lastNam = lastNam;
+    public void setLastName(String lastNam) {
+        this.lastName = lastNam;
     }
 
-    public String getPassworod() {
-        return passworod;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassworod(String passworod) {
-        this.passworod = passworod;
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 }

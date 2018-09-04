@@ -1,2 +1,11 @@
-.idea
-.iml
+.idea/
+*.iml
+target/
+out/
+*.class
+.vscode
+.settings
+**/rebel.xml
+.classpath
+.project
+.factorypath
